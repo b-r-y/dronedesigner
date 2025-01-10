@@ -1,0 +1,16 @@
+- !Motor {
+  name: "XING2 2207 4S 6S FPV Motor",
+  short_name: "XING2 2207",
+  mass: 0.0316,
+  cost: 179,
+  KV: 1855,
+  inputvoltage: 24,
+  peak_current: 35.08,
+  rotor_type: "unibell",
+  shaft_diameter: 5,
+  magnet: "N52H Curved",
+  configuration: "12N14P",
+  }
+- !Motor {
+  name: "new one"
+  }

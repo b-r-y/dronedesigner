@@ -1,0 +1,10 @@
+- !Receiver {
+  name: "RP4TD ExpressLRS 2.4GHz True Diversity Receiver",
+  short_name: "RP4TD ELRS 2.4 GHz",
+  mass: 0.0014,
+  cost: 256,
+  region: "LBT",
+  frequency: 2400000000}
+- !Receiver {
+  name: "new one"
+  }

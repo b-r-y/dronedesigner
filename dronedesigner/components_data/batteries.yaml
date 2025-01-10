@@ -1,0 +1,25 @@
+- !Battery {
+  name: "Tattu R-Line Version 5.0 1400mAh 6S 150C 22.2V Lipo Battery Pack with XT60 Plug",
+  short_name: "6s 1400mAh -150C - Gens Ace Tattu R-Line 5.0",
+  mass: 0.222,
+  cost: 357,
+  cells: 6,
+  voltage: 22.2,
+  capacity: 1400,
+  discharge_rate: 150,
+  max_burst_discharge_rate: 260,
+  balancer_connector: "JST-XHR-7P",
+  balancer_wire_length: "JST-XHR-7P",
+  connector_type: "XT60U",
+  discharge_wire_gauge: 12,
+  discharge_wire_length: 65,
+  chemistry: "LiPo",
+  configuration: "6S1P",
+  length: 78,
+  width: 39,
+  height: 42,
+  manufactuter_link: "https://www.genstattu.com/tattu-r-line-version-5-0-1400mah-6s-150c-22-2v-lipo-battery-pack-with-xt60-plug/",
+  }
+- !Battery {
+  name: "new one"
+  }

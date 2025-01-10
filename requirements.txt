@@ -1,0 +1,4 @@
+ipywidgets >= 8.1.5
+ipykernel >= 6.29.5
+ruamel.yaml >= 0.18.10
+sphinx_rtd_theme >= 3.0.1

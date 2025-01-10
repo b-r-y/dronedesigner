@@ -1,0 +1,10 @@
+
+- !Stack {
+  name: "SpeedyBee F405 V4 BLS 60A 30x30 FC&ESC Stack",
+  short_name: "SpeedyBee F405 V4",
+  mass: 0.0105,
+  cost: 832,
+  mounting_size: "30.5 x 30.5 mm"}
+- !Stack {
+  name: "new one"
+  }

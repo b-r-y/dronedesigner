@@ -1,0 +1,6 @@
+- !Drone
+  name: 5 inch drone
+  frame: !Frame
+    name: Source One V5 5inch
+  stack: !Stack
+    name: some stack
