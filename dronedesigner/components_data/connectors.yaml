@@ -1,0 +1,44 @@
+- !Connector {
+  name: MR30-FB,
+  short_name: MR30-FB,
+  mass: 0.001,
+  cost: 6,
+  number_of_pins: 3,
+  mating_part: MR30-M,
+  connector_type: receptical,
+  current_rating: 15,
+  voltage_rating: 500
+  }
+- !Connector {
+  name: MR30-M,
+  short_name: MR30-M,
+  mass: 0.0015,
+  cost: 6,
+  number_of_pins: 3,
+  mating_part: MR30-FB,
+  connector_type: plug,
+  current_rating: 15,
+  voltage_rating: 500,
+  }
+- !Connector {
+  name: XT60H-F,
+  short_name: XT60H-F,
+  mass: 0.004,
+  cost: 12,
+  number_of_pins: 2,
+  mating_part: XT60H-M,
+  connector_type: receptical,
+  current_rating: 30,
+  voltage_rating: 500,
+  }
+- !Connector {
+  name: XT60H-M,
+  short_name: XT60H-M,
+  mass: 0.004,
+  cost: 12,
+  number_of_pins: 2,
+  mating_part: XT60H-F,
+  connector_type: plug,
+  current_rating: 30,
+  voltage_rating: 500,
+  }

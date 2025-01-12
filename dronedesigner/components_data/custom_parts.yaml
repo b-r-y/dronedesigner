@@ -1,0 +1,36 @@
+- !Custom_Part {
+  name: 5 Inch rear dual RX & VTX antennas mount with XT60 holder,
+  short_name: 5 Inch rear antenna holder,
+  mass: 0.015,
+  cost: 10,
+  color: red,
+  3d_printed: true,
+  material: TPU,
+  }
+- !Custom_Part {
+  name: 5 Inch arm guard,
+  short_name: 5 Inch arm guard,
+  mass: 0.0055,
+  cost: 5,
+  color: red,
+  3d_printed: true,
+  material: TPU,
+  }
+- !Custom_Part {
+  name: 5 Inch front bumper,
+  short_name: 5 Inch front bumper,
+  mass: 0.003,
+  cost: 5,
+  color: red,
+  3d_printed: true,
+  material: TPU,
+  }
+- !Custom_Part {
+  name: 5 Inch cap and rx holder,
+  short_name: 5 Inch cap and rx holder,
+  mass: 0.004,
+  cost: 5,
+  color: red,
+  3d_printed: true,
+  material: TPU,
+  }

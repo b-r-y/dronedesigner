@@ -6,5 +6,5 @@
   cost: 832,
   mounting_size: "30.5 x 30.5 mm"}
 - !Stack {
-  name: "new one"
+  name: "Default Stack"
   }

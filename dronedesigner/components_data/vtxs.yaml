@@ -1,0 +1,13 @@
+- !VTX {
+  name: Avatar V2 Pro Module(Dual Antenna),
+  short_name: Avatar V2 Pro (dual),
+  mass: 0.0154,
+  cost: 1340,
+  mounting_holes: [20, 25.5],
+  storage: 32,
+  max_resolution: 1080,
+  number_of_channels: 8,
+  min_input_voltage: 6,
+  max_input_voltage: 25.2,
+  number_of_antennas: 2,
+  }

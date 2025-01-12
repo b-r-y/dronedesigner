@@ -1,0 +1,10 @@
+- !Receiver_Antenna {
+  name: "Sequre Antenna",
+  short_name: "Sequre Antenna",
+  mass: 0.0025,
+  cost: 0,
+  frequency: 2400000000,
+  cable_length: 80,
+  connector: IPEX,
+  }
+

@@ -1,10 +1,18 @@
 - !Receiver {
   name: "RP4TD ExpressLRS 2.4GHz True Diversity Receiver",
   short_name: "RP4TD ELRS 2.4 GHz",
-  mass: 0.0014,
+  mass: 0.0015,
   cost: 256,
   region: "LBT",
-  frequency: 2400000000}
+  protocol: CRSF,
+  frequency: 2400000000,
+  supply_voltage: 5,
+  mcu: ESP32-PICO-D4,
+  rf_chip: SX1281,
+  tcxo: True,
+  lna: True,
+
+  }
 - !Receiver {
-  name: "new one"
+  name: "Default Receiver"
   }

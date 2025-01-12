@@ -1,0 +1,8 @@
+- !Propeller {
+  name: HQ Holdbar prop 5X4.8X3V1S,
+  short_name: HQ 5X4.8X3V1S,
+  mass: 0.0044,
+  cost: 5.5,
+  number_of_units: 1,
+  }
+

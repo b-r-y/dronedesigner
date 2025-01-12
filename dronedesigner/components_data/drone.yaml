@@ -1,6 +1,84 @@
 - !Drone
-  name: 5 inch drone
+  battery: !Battery
+    name: default_name
+    short_name: default_name
+    mass: 0
+    cost: 0
+    number_of_units: 1
+    component_type: !ComponentType BATTERY
+  battery_strap: !Battery_Strap
+    name: default_name
+    short_name: default_name
+    mass: 0
+    cost: 0
+    number_of_units: 1
+    component_type: !ComponentType BATTERY_STRAP
   frame: !Frame
-    name: Source One V5 5inch
+    name: default_name
+    short_name: default_name
+    mass: 0
+    cost: 0
+    number_of_units: 1
+    component_type: !ComponentType FRAME
+    arms_spacer: 6
+  motor: !Motor
+    name: default_name
+    short_name: default_name
+    mass: 0
+    cost: 0
+    number_of_units: 1
+    component_type: !ComponentType MOTOR
+  receiver: !Receiver
+    name: default_name
+    short_name: default_name
+    mass: 0
+    cost: 0
+    number_of_units: 1
+    component_type: !ComponentType RECEIVER
+    region: unknown
+    frequency: 0
   stack: !Stack
-    name: some stack
+    name: default_name
+    short_name: default_name
+    mass: 0
+    cost: 0
+    number_of_units: 1
+    component_type: !ComponentType STACK
+    mounting_size: unknown
+  propeller: !Propeller
+    name: default_name
+    short_name: default_name
+    mass: 0
+    cost: 0
+    number_of_units: 1
+    component_type: !ComponentType PROPELLER
+  receiver_antenna: !Receiver_Antenna
+    name: default_name
+    short_name: default_name
+    mass: 0
+    cost: 0
+    number_of_units: 1
+    component_type: !ComponentType RECEIVER_ANTENNA
+  vtx_kit: !VTX_Kit
+    component_type: !ComponentType VTX_KIT
+    camera: !Camera
+      name: default_name
+      short_name: default_name
+      mass: 0
+      cost: 0
+      number_of_units: 1
+      component_type: !ComponentType CAMERA
+    vtx: !VTX
+      name: default_name
+      short_name: default_name
+      mass: 0
+      cost: 0
+      number_of_units: 1
+      component_type: !ComponentType VTX
+    vtx_antenna: !VTX_Antenna
+      name: default_name
+      short_name: default_name
+      mass: 0
+      cost: 0
+      number_of_units: 1
+      component_type: !ComponentType VTX_ANTENNA

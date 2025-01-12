@@ -1,7 +1,7 @@
 - !Battery {
   name: "Tattu R-Line Version 5.0 1400mAh 6S 150C 22.2V Lipo Battery Pack with XT60 Plug",
   short_name: "6s 1400mAh -150C - Gens Ace Tattu R-Line 5.0",
-  mass: 0.222,
+  mass: 0.230,
   cost: 357,
   cells: 6,
   voltage: 22.2,

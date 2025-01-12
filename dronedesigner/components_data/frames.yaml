@@ -4,5 +4,5 @@
   mass: 0.1235,
   cost: 306}
 - !Frame {
-  name: "new one"
+  name: "Default Frame",
   }

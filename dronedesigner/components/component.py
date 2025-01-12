@@ -7,10 +7,12 @@ class ComponentType(StrEnum):
     yaml_tag: ClassVar = "!ComponentType"
 
     NONE = "undefined"
+    BATTERY = "battery"
+    BATTERY_STRAP = "battery_strap"
+    CONNECTOR = "connector"
     FRAME = "frame"
     RECEIVER = "receiver"
     RECEIVER_ANTENNA = "receiver_antenna"
-    TRANSMITTER = "transmitter"
     ESC = "ecs"
     FC = "fc"
     STACK = "stack"
@@ -18,20 +20,17 @@ class ComponentType(StrEnum):
     PROPELLER = "propeller"
     VTX = "vtx"
     VTX_ANTENNA = "vtx_antenna"
+    VTX_KIT = "vtx_kit"
     CAMERA = "camera"
     GPS = "gps"
-    BATTERY = "battery"
-    BATTERY_STRAP = "battery_strap"
     CUSTOM_PART = "custom_part"
 
     @classmethod
     def to_yaml(cls, representer, node):
-        return representer.represent_scalar(
-            cls.yaml_tag, f"{node.name}"  # .format(node, node)
-        )
+        return representer.represent_scalar(cls.yaml_tag, f"{node.name}")
 
     @classmethod
-    def from_yaml(cls, constructor, node):
+    def from_yaml(cls, constructor, node) -> "ComponentType":
         return cls[node.value]
 
 
@@ -40,24 +39,32 @@ class Component:
 
     name: str = "default_name"
     short_name: str = "default_name"
-    mass: float = 0
-    cost: float = 0
+    mass: float = 0  # individual components have cost
+    cost: float = 0  # individual components have mass
     number_of_units: int = 1
     component_type: ComponentType = ComponentType("undefined")
 
 
-if __name__ == "__main__":
-    import ruamel.yaml
+class Kit:
 
-    yaml = ruamel.yaml.YAML()
-    yaml.register_class(cls=ComponentType)
+    name: str = "default_kit_name"
+    short_name: str = "default_kit_short_name"
+    cost: float = (
+        0  # Kits have cost as a whole and individual component costs are ignored
+    )
+    number_of_units: int = 1
 
-    comp_type = ComponentType("frame")
+    component_type: ComponentType = ComponentType("undefined")
 
-    with open(file="test_yaml_dump.yaml", mode="w", encoding="utf-8") as file:
-        yaml.dump(data=comp_type, stream=file)
+    def _get_components(self) -> list:
+        return [p for p in vars(self) if isinstance(vars(self)[p], Component)]
 
-    with open(file="test_yaml_dump.yaml", mode="r", encoding="utf-8") as file:
-        newer_comp_type: ComponentType = yaml.load(stream=file)
-
-        b = 1
+    # Kits have mass which is the sum of their components' mass
+    @property
+    def mass(self) -> float:
+        return sum(
+            [
+                getattr(self, p).mass * getattr(self, p).number_of_units
+                for p in self._get_components()
+            ]
+        )

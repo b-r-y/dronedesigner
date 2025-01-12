@@ -12,5 +12,5 @@
   configuration: "12N14P",
   }
 - !Motor {
-  name: "new one"
+  name: "Default Motor",
   }

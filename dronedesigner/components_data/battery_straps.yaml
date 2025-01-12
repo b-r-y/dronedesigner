@@ -1,0 +1,10 @@
+- !Battery_Strap {
+  name: Bronto Hook and Loop,
+  short_name: Bronto Hook and Loop,
+  mass: 0.003,
+  cost: 12,
+  width: 20,
+  length: 250,
+  attachment: velcro,
+  non_slip: false,
+  }

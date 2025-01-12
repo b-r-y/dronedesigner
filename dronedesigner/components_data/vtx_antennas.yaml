@@ -1,0 +1,11 @@
+- !VTX_Antenna {
+  name: Avatar V2 Antenna,
+  short_name: Avatar V2 Antenna,
+  mass: 0.002,
+  cost: 99,
+  polarization: LHCP,
+  gain: 1.9,
+  vswr: 1.5,
+  impedance: 50,
+  connector: IPEX,
+  }
