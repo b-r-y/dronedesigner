@@ -21,5 +21,5 @@
   manufactuter_link: "https://www.genstattu.com/tattu-r-line-version-5-0-1400mah-6s-150c-22-2v-lipo-battery-pack-with-xt60-plug/",
   }
 - !Battery {
-  name: "new one"
+  name: "Default Battery"
   }

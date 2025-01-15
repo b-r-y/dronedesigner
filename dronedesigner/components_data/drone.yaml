@@ -26,7 +26,7 @@
     short_name: default_name
     mass: 0
     cost: 0
-    number_of_units: 1
+    number_of_units: 4
     component_type: !ComponentType MOTOR
   receiver: !Receiver
     name: default_name

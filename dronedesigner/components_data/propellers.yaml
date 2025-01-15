@@ -5,4 +5,8 @@
   cost: 5.5,
   number_of_units: 1,
   }
+- !Propeller {
+  name: "Default Properller",
+  }
+
 

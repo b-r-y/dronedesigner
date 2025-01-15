@@ -41,3 +41,6 @@
     connector: IPEX,
   }
 }
+- !VTX_Kit {
+  name: "Default VTX Kit"
+  }

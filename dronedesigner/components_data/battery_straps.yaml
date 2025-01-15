@@ -8,3 +8,6 @@
   attachment: velcro,
   non_slip: false,
   }
+- !Battery_Strap {
+  name: "Default Battery Strap",
+  }
