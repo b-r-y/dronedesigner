@@ -1,0 +1,19 @@
+{
+    "name": "Alpine Dev Container",
+    "build": {
+        "context": "..",
+        "dockerfile": "../docker/Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "james-yu.latex-workshop"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/workspace/.venv/bin/python"
+            }
+        }
+    },
+    "mounts": [ "source=${env:SSH_AUTH_SOCK},target=/ssh-agent,type=bind" ],
+}
